@@ -1,6 +1,10 @@
-# install php
+# install software
 apt-get install software-properties-common -y
+
+# install repo
 add-apt-repository ppa:ondrej/php -y
+
+# update
 apt-get update -y
 
 # go to root
