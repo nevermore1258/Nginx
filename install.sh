@@ -1,8 +1,13 @@
+# install php
 apt-get install software-properties-common -y
 add-apt-repository ppa:ondrej/php -y
 apt-get update -y
-apt-get -y install nginx php7.0-fpm php7.0-cli
+
+# go to root
 cd
+
+# Install Web Server
+apt-get -y install nginx php7.0-fpm php7.0-cli
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/nevermore1258/Nginx/master/nginx.conf"
